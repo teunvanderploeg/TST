@@ -1,7 +1,8 @@
-function Voorraad(item, aantal) {
+function Voorraad(item, aantal, verlaagVoorraad = 0, verhoogVoorraad = 0) {
   let artikel = item;
   let voorraad = aantal;
-
+  let verlaagVoorraad = verlaagVoorraad;
+  let verhoogVoorraad = verhoogVoorraad;
   this.getVoorraad = function () {
     return voorraad;
   };
@@ -12,10 +13,10 @@ function Voorraad(item, aantal) {
     console.log("De voorraad van : " + artikel + " is " + voorraad);
   };
   this.verlaagVoorraad = function () {
-    voorraad = voorraad - 1;
+    voorraad = voorraad - verlaagVoorraad;
   };
-  this.Voorraad = function (aantal) {
-    voorraad = voorraad + aantal;
+  this.verhoogVoorraad = function () {
+    voorraad = voorraad + verhoogVoorraad;
   };
 }
 function Auto(merk, bouwjaar) {
