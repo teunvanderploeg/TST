@@ -1,8 +1,8 @@
-function Voorraad(item, aantal, verlaagVoorraad = 0, verhoogVoorraad = 0) {
+function Voorraad(item, aantal, verlaagVoorraadd = 0, verhoogVoorraadd = 0) {
   let artikel = item;
   let voorraad = aantal;
-  let verlaagVoorraad = verlaagVoorraad;
-  let verhoogVoorraad = verhoogVoorraad;
+  let verlaagVoorraad = verlaagVoorraadd;
+  let verhoogVoorraad = verhoogVoorraadd;
   this.getVoorraad = function () {
     return voorraad;
   };
