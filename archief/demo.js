@@ -30,16 +30,12 @@ function DemoAccessControl() {
   };
 }
 let Demo = new DemoAccessControl();
-console.log(Demo.accessObject); //private
+
 console.log(Demo.nummer);
 console.log(Demo.tekst);
 console.log(Demo.aNumber);
-console.log(Demo.anOtherNumber); //private
 console.log(Demo.getAnOtherNumber);
 console.log(Demo.setAnOtherNumber);
-console.log(Demo.objectValues); //private
-
-console.time();
 
 /*
 Een variabele is private of public
